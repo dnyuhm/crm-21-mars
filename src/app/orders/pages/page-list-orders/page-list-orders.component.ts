@@ -14,7 +14,12 @@ export class PageListOrdersComponent implements OnInit {
 
     // console.log('page list instanced');
     this.ordersService.collection$.subscribe((data) => console.log(data));
+    console.log('constructor');
   }
 
   ngOnInit(): void {}
+
+  // public changeTitle(): void {
+  //   this.myTitle = 'My List Orders (titre change)';
+  // }
 }
